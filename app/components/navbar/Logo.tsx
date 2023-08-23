@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 const Logo = () => {
   const router = useRouter();
 
-  return <Image 
+  return <Image
+    onClick={() => router.push("/")}
     alt="AirBnb Logo"
     className="hidden md:block curspor-pointer"
     height={100}
